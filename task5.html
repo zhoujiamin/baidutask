@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>task5</title>
+	<style type="text/css">
+	body{
+       background: #ddd;
+       margin: 0;
+       font-family: "微软雅黑",serif;
+       min-width: 540px;
+	}
+  .quan{
+     margin: 10px;
+
+  }
+  p{
+    text-indent: 2em;
+  }
+	/* 头部 */
+	.header{
+		 background: black;
+		 height: 80px;
+     position: relative;
+	}
+    .header h1{
+         color: white;
+         line-height: 80px;
+         padding-left: 40px;
+         margin: 0;
+     }
+  
+    .header ul{
+          margin: 0px;
+          height: 80px;
+          line-height: 80px;
+          position: absolute;
+          right: 0;
+          top:0;
+          padding-right: 40px;
+     } 
+     .header li{
+     	 display: inline-block;
+     }
+
+	  .middle{
+        
+        overflow: auto;
+
+
+	   }
+
+    .left{
+      
+       margin-left: 0px;
+       margin-right: 430px;
+       margin-top: 20px;
+       min-width: 100px;
+    }
+    .left .text1{
+       margin: 15px;
+       background:white;
+       overflow: auto;
+       box-shadow: 5px 5px 5px #888;
+    }
+
+    .left .text234{
+       margin:30px 15px;
+       background:white;
+       overflow: auto;
+       box-shadow: 5px 5px 5px #888;
+    }
+    .left .picture{
+       margin:30px 15px;
+       overflow: auto;
+       background:white;
+       overflow: auto;
+       box-shadow: 5px 5px 5px #888;
+    }
+    .picture img{
+       float:left;
+       margin-right: 10px;
+       margin-bottom: 10px;
+       
+
+    }
+    .tablestyle{
+      width: 100%;
+      
+      
+    }
+    .tablestyle th{
+      color: white;
+      background: black;
+    }
+     .tablelast{
+      background: #ddd;
+     }
+
+    .right{
+        
+        float:right;
+        width: 380px;
+        margin-top: 20px;
+        margin-right: 20px;
+        overflow: auto;
+        background: white;
+        box-shadow: 5px 5px 5px #888;
+
+    }
+    .entrance{
+        margin: 15px;
+        
+
+    }
+
+    /* 尾部 */
+     .footer{
+       border: 1px solid black;
+       background: black;
+       height: 60px;
+     }
+     .footer .foot{
+      color:white;
+      line-height: 60px;
+      text-align: center;;
+     }
+	</style>
+
+</head>
+<body>
+
+     
+     <div class="header">
+         <h1>复仇者联盟</h1> 
+         <ul>
+             <li><a href='http://baike.baidu.com/link?url=p1qDZme3PCZ4DwpSCRB6Cgj3uMHVaF8OcZILAilnDHoikTSM6KGlr_fm7r-A8OUl6YAWd8jqKXkDUGx0xCFj-BZOIP8OHvxdna5WJqcac9a' target=‘_blank’ style="color:white"> 复仇者联盟一</a></li>
+             <li><a href='http://baike.baidu.com/link?url=LE1QMOW3NKT3Cks5i9eKPzJaT9pfuIiw9f8CVlVaGPL-f80TDSIJ_CGP4NKMFmJ27CHItY81fq2ItGiLW2e0oUHNTK4GhE4RXetFZ-5oYOrvoL--wV5D6auOb-c3s8dqU8wR9yfX5j1mKJD2tGeLd21DuexPvvD2zCAJeIOVKHjlYlr6QrUzb1T3GAkdnJ4M' target='_blank' style="color:white">复仇者联盟二</a></li>
+             <li><a href='http://baike.baidu.com/link?url=P71Q8VZKGl1cbTFrTDEblSg0-jBH2Jkbpdwf4ZGjdbhwm-lxbOJAKDz-_PbDos6VnJzeuiqR0poQVnV3JilUfJPWxhuywHvFwXRYII25_eQHM95WPpzwd5DzG7m1iXvt0BA-aAf523dQuUZdDSUHNZuHr7qzrPIswFetrobzNzHhzDIUWyS1k9JAEQ_LYwVg10Des-l7XwTDs8ClHCUlezN408GmYcB6IyUUI1wCKQmFoKSffxaxh3ecDAI0Ncd9RTlfBl4PX3GHYXV6uKebJebDY6HJpkTckCwkeaQ742C' target='_blank' style="color:white">复仇者联盟三</a></li>
+         </ul>
+     </div> 
+
+     <!-- 中间部分 -->    
+     <div class="middle">
+     
+      <!-- 右边边部分 -->
+         <div class="right">
+             <div class='entrance'>
+               <h2 style="margin-top:0px">粉丝入口</h2>
+               <form  method="post" action="save.php">
+               <label>请输入邮箱地址:</label>
+               <input  type="text"  name="myName" value='请正确输入邮箱'/>
+               <br />
+               请输入密码: 
+               <input  type="password"  name="pass" / >
+               <br />
+               请重复输入: 
+               <input  type="password"  name="doublepass" />
+               <br />
+               <br />
+               
+               
+               <label>性别:</label>
+               <input type="radio" value="1"  name="gender" / checked='checked'>
+               <label>男</label>
+               <input type="radio" value="2"  name="gender" />
+               <label>女</label>
+                &nbsp;<label>城市：</label>
+               <select>
+               <option value="杭州">杭州</option>
+               <option value="北京" selected="selected">北京</option>
+               <option value="广东">广东</option>
+               <option value="上海">上海</option>
+               </select>
+               <br />
+               <label>爱好：</label>
+               <input type="checkbox" value="4"  name="run" />
+               <label>运动</label>
+                <input type="checkbox" value="5"  name="sing" />
+               <label>唱歌</label>
+               <input type="checkbox" value="6"  name="code" />
+               <label>编程</label>
+               <br />
+               <br />
+               
+               <label>个人描述：</label>
+               <br />
+               <textarea cols="45" rows="10">在这里输入内容...</textarea>
+               <br />
+               <input type="submit" value="确定"  name="submit" />
+               <input type="reset" value="重置"  name="reset" />
+                </form> 
+
+               </div>
+         </div>
+      <!-- 左边部分 -->
+          <div class="left">
+             <!-- text1 -->
+             <div class="text1">
+             <div class="quan">
+             <h2>复仇者联盟一</h2>
+             <p>一股突如其来的强大邪恶势力对地球造成致命威胁，没有任何一个超级英雄能够单独抵挡。长期致力于保护全球安危的神盾局感到措手不及，其指挥官<a href='http://baike.baidu.com/subview/10716978/16804488.htm' target=‘_blank’>“独眼侠”</a><a href='http://baike.baidu.com/subview/10716978/16804488.htm' target=‘_blank’>尼克-法瑞</a>（<a href='http://baike.baidu.com/view/1285252.htm' target=‘_blank’>塞缪尔·杰克逊</a>饰）意识到他必须创建一个“史上最强”的联盟组织，云集各方超级英雄一起发威，才能拯救世界于水深火热，抵御黑暗势力的侵袭。于是由六大超级英雄——<a href='http://baike.baidu.com/view/7645585.htm?fromtitle=%E9%92%A2%E9%93%81%E4%BE%A0&fromid=1918968&type=syn' target=‘_blank’>“钢铁侠”</a>（<a href='http://baike.baidu.com/view/1505871.htm' target=‘_blank’>小罗伯特·唐尼</a>饰）、<a href='http://baike.baidu.com/subview/1897765/5135463.htm?fromtitle=%E9%9B%B7%E7%A5%9E&fromid=8321769&type=syn' target=‘_blank’>“雷神”</a>（<a href='http://baike.baidu.com/view/2858491.htm' target=‘_blank’>克里斯·海姆斯沃斯</a>饰）、<a href='http://baike.baidu.com/subview/1660914/5113200.htm' target=‘_blank’>“美国队长”</a>（<a href='http://baike.baidu.com/view/1055449.htm' target=‘_blank’>克里斯·埃文斯</a>饰）、<a href='http://baike.baidu.com/subview/254530/9894562.htm' target=‘_blank’>“绿巨人”</a>（<a href='http://baike.baidu.com/view/5497023.htm?fromtitle=%E9%A9%AC%E5%85%8B%C2%B7%E9%B2%81%E5%BC%97%E6%B4%9B&fromid=2129304&type=syn' target=‘_blank’>马克·鲁弗洛</a>饰）、<a href='http://baike.baidu.com/subview/454495/8807394.htm' target=‘_blank’>“黑寡妇”</a>（<a href='http://baike.baidu.com/view/140422.htm' target=‘_blank’>斯嘉丽·约翰逊</a>饰）和<a href='http://baike.baidu.com/subview/25021/15007578.htm?fromtitle=%E9%B9%B0%E7%9C%BC%E4%BE%A0&fromid=959525&type=syn' target=‘_blank’>“鹰眼”</a>（<a href='http://baike.baidu.com/view/2539178.htm' target=‘_blank’>杰瑞米·雷纳</a>饰）组成的 “复仇者联盟”应运而生。他们各显神通，团结一心，终于战胜了邪恶势力，保证了地球的安全。
+             </p>
+             <h4>影评</h4>
+             <p>那么，回到《复仇者联盟》这部电影本身，我们应该怎么归类这部电影？复仇者联盟本身是白银时代的产物，1963年惊奇公司正式推出了这个组织，算是对DC公司正义联盟的一个回应。但《复仇者联盟》这部电影在性质上却不能根据白银时代的规律来完全定义。最大的分歧是，复仇者联盟在电影中变成了半官方组织。在白银时代的漫画里，复仇者联盟的建立基本上没神盾局什么事，是蚂蚁人、黄蜂女、雷神托尔和绿巨人这四个超级英雄带点儿游戏性质自己建立起来的，直到复仇者联盟找到了美国队长，由美国队长出任复仇者联盟的领袖，这个组织才真正像个样子。然后是钢铁侠加入，因为钢铁侠和政府的关系，复仇者才算是获得了官方的认可。而电影中复仇者联盟整个儿就是神盾局建立起来的。从故事的角度想，这样设定当然更合情合理，也能更快地进入叙事冲突。不过我也怀疑是不是因为黄蜂女和蚂蚁人的版权还在别的电影公司那里（顺带一提，蜘蛛侠的形象被哥伦比亚公司买断了，X战警的形象则被20世纪福克斯公司买断了，所以除非迪斯尼公司跟这几大公司合作，不然一时半会也别期望他们能加入复仇者联盟了）。</p>
+             <p>不仅如此，不管是尼克还是神盾局，在影片中的形象都未免太光面了些，完全不是惊奇漫画里的特务之王的样子，整个儿就是那群还不懂事的超级英雄们的奶妈。他对每一个超级英雄的身份都了如指掌，而且他保护着这些英雄，并且督促着他们的团结和成长。正如这部电影的制片人凯文·费格所称，《复仇者联盟》更像是一部灾难片，而不是一部超级英雄电影。双重身份的矛盾在这部电影中是不存在的，超级英雄与大众的矛盾在这部电影中也是不存在的。这部电影跟X战警不一样，他们无须躲避起来，他们有一个官方组织在保护他们。虽然影片中也强调了，神盾之外的政权似乎是反对复仇者联盟的，但这些政权除了在视频里说几句话，还能怎样呢？尼克甚至可以轻易地否定他们的决议并获得整个神盾局的支持（这些领导人居然可以在事件解决后没有马上撤了尼克的职务并且取缔神盾局，实在是心胸开阔啊）。</p>
+
+             </div>
+             </div>
+             <!-- text2 -->
+             <div class="text234">
+              <div class="quan">
+             <h2>复仇者联盟二</h2>
+             <p>身经百战的超级英雄们产生了职业倦怠，已经卸下钢铁战甲的<strong>托尼·斯塔克</strong>因此发明了<strong>“奥创”</strong>——有自我意识、有学习能力的人工智能机器人，并将指挥机器人军团的重任交给奥创。令超级英雄们始料不及的是，不断进化的奥创得出了“人类是地球上最大的威胁”这一结论，进而开始实施清洗人类的毁灭计划。有强大能力的改造人兄妹快银和猩红女巫也成为奥创的帮手，四处制造麻烦。复仇者联盟必须再度集合，解决这个由他们亲手制造的危机。
+             </p>
+             <h4>影评</h4>
+             <p>因此，《复仇者联盟》在上映之前是让我充满兴奋之情的，几乎可以断定，随着这部影片的上映，必定能够开启超级英雄电影新一轮的热潮。我在尚未看这部电影之前，就已经对这部电影充满爱意，就像是巴赞在建立了自己的现实主义电影本体论后，突然看到了意大利新现实主义电影一样，那是一种时代在印证自己的理论的感觉。但电影有时候是难以用理论来完全解释的，就像意大利新现实主义电影在自己发展的后期与巴赞的预想完全偏离，就像西部片的演变颠覆了当初对其的定义。《复仇者联盟》并不是我预想中的一部超级英雄电影，即使我用超级英雄漫画的白银时代的特征规律来解释，也难以自圆其说。这既让我苦恼，也让我兴奋。超级英雄电影是否已经开启了自己的演化，如同西部片所进行的那样？又或者这只是一个偶然现象，只因为惊奇公司为了更好地推动和宣传自己旗下的英雄而打的大型广告（事实上，随着这部影片的热映，成功捧红了绿巨人，而绿巨人在以前李安和莱特里尔的两部影片中并未引起反响）</p>
+             </div>
+             </div>
+             <!-- picture -->
+             <div class="picture">
+              <div class="quan">
+                 <h2>图集</h2>
+                 
+                 <img src='http://pic2.qqmofasi.com/2015/05/28/1793_iOHt70YRTBj7tzZJH7oO_square.jpg' />
+                 
+                 <img src='http://pic5.qqmofasi.com/2015/05/28/1793_fOYpdF2dw0my7fdm7OU7_square.jpg'/>
+                 
+                 <img src='http://pic4.qqmofasi.com/2015/05/28/1793_z24S11599gX9x4gc3awx_square.jpg' />
+                 
+                 <img src='http://pic0.qqmofasi.com/2015/05/28/1793_ZiTY5kLG62g86061OTOg_square.jpg'/>
+
+                 <img src='http://pic5.qqmofasi.com/2015/05/28/1793_IF4GTWvckT4Di33G42KM_square.jpg'/>
+
+                 <img src='http://pic3.qqmofasi.com/2015/05/28/1793_trx0HB3sp5rMiBssb0Gx_square.jpg'/>
+
+                 <img src='http://pic4.qqmofasi.com/2015/05/28/1793_PF7K1483RJYo391OrKrR_square.jpg'/>
+             </div>
+             </div>
+             
+              <!-- 有表格的 -->
+             <div class="text234">
+              <div class="quan">
+               <h3>粉丝欢迎程度排名</h3>
+               <ol>
+                   <li>钢铁侠</li>
+                   <li>黑寡妇</li>
+                   <li>美国队长</li>
+               </ol>
+               
+               <table  class="tablestyle">
+               <tr>
+               <th>英雄名称</th><th>武器</th><th>特异功能</th>
+               </tr>
+               <tr>
+               <td>钢铁侠</td><td>钢铁侠战衣</td><td>刀枪不入，飞行战斗</td>
+               </tr>
+               <tr>
+               <td>美国队长</td><td>盾</td><td>超常的体力、耐力和行动速度</td>
+               </tr>
+               <tr>
+               <td>雷神</td><td>雷神之锤</td><td>阿斯加德之神，神锤雷霆万钧，力量无敌</td>
+               </tr>
+               <tr>
+                <td>绿巨人浩克</td><td>变身为巨人</td><td>无限能力，所向披靡</td>
+               </tr>
+               <tr>
+               <td>黑寡妇</td><td>手枪</td><td>聪明，精通多种语言，擅长格斗</td>
+               </tr>
+               <tr>
+               <td>鹰眼</td><td>弓箭</td><td>敏捷、神速，一流的箭术</td>
+               </tr>
+               <tr>
+                <td>洛基</td><td>邪神权杖</td><td>阿斯加德之神，擅长巫术、伪装</td>
+               </tr>
+               <tr>
+               <td>尼克·弗瑞</td><td>无</td><td>曾服务于美国陆军和CIA</td>
+               </tr>
+               <tr class="tablelast">
+               <td ></td><td  colspan='2' align='center' style="backgroud:#eee">Boss</td>
+               </tr>
+               </table>
+              
+
+             </div >
+              </div >
+
+             </div>
+
+     </div> 
+
+     <div class="footer">
+     <div class="foot">版权所有©</div>
+     </div> 
+      
+    
+    
+	
+</body>
+</html>
