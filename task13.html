@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+  <button id="button" onclick="inputair()" >确认填写</button>
+
+  <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+
+  function inputair(){
+    //innerHTML  只取一些文本标签里有内容，比喻 div  span  p  等这里不能输入的标签里有内容。value是取一取输入框的值  比喻 input textarea  select 等等(表单类)
+    var inputair1=document.getElementById("aqi-input").value; 
+     
+    document.getElementById("aqi-display").innerHTML=inputair1;
+    
+  }
+</script>
+</body>
+</html>
