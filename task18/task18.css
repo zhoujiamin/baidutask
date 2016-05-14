@@ -1,0 +1,18 @@
+body{
+	font-family: "Microsoft YaHei" ;
+}
+#showdata
+{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    margin-top: 1em;
+}
+
+.data{
+	background-color: red;
+	color: white;
+	font-size: 25px;
+	margin:1em;
+}
